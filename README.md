@@ -5,3 +5,5 @@
 
 * 장소: 멀티캠퍼스 역삼(서울특별시 강남구 테헤란로 212)
 * 기간: 2020/07/09 ~ 2020/08/28
+
+[소개 페이지](https://www.multicampus.com/system/attach/image/GgO6PMs32TPyiyhyM1dv/DbLE5bN1OFbxaM1vm9KLmUduZ)
