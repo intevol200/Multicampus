@@ -1,4 +1,4 @@
--- 작업1
+-- practice 1
 SELECT last_name, job_id, salary AS Sal
 FROM employees;
 
@@ -9,7 +9,7 @@ SELECT employee_id, last_name, salary*12 AS "ANNUAL SALARY"
 FROM employees;
 
 
--- 작업2
+-- practice 2
 DESC DEPARTMENTS;
 
 DESC EMPLOYEES;
@@ -22,7 +22,7 @@ SELECT DISTINCT JOB_ID
 FROM EMPLOYEES;
 
 
--- 작업3
+-- practice3
 SELECT EMPLOYEE_ID AS "Emp #", LAST_NAME AS "Employee", JOB_ID AS "Job", HIRE_DATE AS "Hire Date"
 FROM EMPLOYEES
 ORDER BY EMPLOYEE_ID;
