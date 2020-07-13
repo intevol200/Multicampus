@@ -1,0 +1,112 @@
+## SQL 함수
+#### 단일행 함수
+	* 일반
+	* 문자
+	* 숫자
+	* 변환
+	* 날짜
+
+#### 문자함수
+* 대소문자 변환 함수
+	- LOWER
+	- UPPER
+	- INITCAP
+
+| 함수 | 결과 |
+|---|---|
+| LOWER('SQL Course') | sql course |
+| UPPER('SQL Course') | SQL COURSE |
+| INITCAP('SQL Course')  | Sql Course |
+
+```SQL
+SELECT *
+FROM EMP
+WHERE ENAME = 'SCOTT';
+
+SELECT *
+FROM EMP
+WHERE ENAME IN ('SCOTT','scott','Scott','sCott');
+
+SELECT *
+FROM EMP
+WHERE UPPER(ENAME) = 'SCOTT';
+
+SELECT LAST_NAME, UPPER(LAST_NAME), LOWER(LAST_NAME)
+FROM EMPLOYEES; 
+```
+
+* 문자 조작 함수
+	- CONCAT
+	- SUBSTR
+	- LENGTH
+	- INSTR
+	- LPAD | RPAD
+	- TRIM
+	- REPLACE
+
+| 함수 | 결과 |
+|---|---|
+| CONCAT('Hello', 'World') | HelloWorld |
+| SUBSTR('HelloWorld', 1, 5) | Hello |
+| LENGTH('HelloWorld') | 10 |
+| INSTR('HelloWorld', 'W') | 6 |
+| LPAD(SAL, 12, '*') | *****24000 |
+| RPAD(SAL, 12, '*') | 24000***** |
+
+
+```SQL
+SELECT ENAME || JOB, CONCAT(ENAME, JOB)
+FROM EMP;
+
+SELECT ENAME, SUBSTR(ENAME, 2, 2)
+FROM EMP;
+
+SELECT ENAME, SUBSTR(ENAME, 2), SUBSTR(ENAME, -2, 2)
+FROM EMP;
+```
+
+##### 변환함수
+```SQL
+SELECT TO_CHAR(SAL)
+FROM EMP
+ORDER BY 1;
+```
+
+#### 함수중첩
+```SQL
+SELECT CONCAT(CONCAT(LAST_NAME, '''s job category is '), JOB_ID) AS "Job"
+FROM EMPLOYEES
+WHERE SUBSTR(JOB_ID, 4) = 'REP';
+
+SELECT LAST_NAME, UPPER(CONCAT(SUBSTR(LAST_NAME, 1, 8), '_US'))
+FROM EMPLOYEES
+WHERE DEPARTMENT_ID = 60;
+```
+
+#### 숫자함수
+* ROUND: 지정된 소수점 자릿수로 값을 반올림합니다.
+* TRUNC: 지정된 소수점 자릿수로 값을 truncate합니다.
+* CEIL: 지정된 수 이상인 가장 작은 정수를 반환합니다.
+* FLOOR: 지정된 수 이하인 가장 큰 정수를 반환합니다.
+* MOD: 나눈 나머지를 반환합니다.
+
+| 함수 | 결과 |
+|---|---|
+| ROUND(45.926, 2) | 45.93 |
+| TRUNC(45.926, 2) | 45.92 |
+| CEIL (2.83) | 3 |
+| FLOOR (2.83) | 2 |
+| MOD (1600, 300) | 100 |
+
+```SQL
+-- 검색되는 행의 갯수는 FROM 절의 영향을 받음
+SELECT ROUND(45.926, 2),
+       ROUND(45.926, 0),
+       ROUND(45.926, -1)
+FROM DEPT;
+
+SELECT ROUND(45.926, 2),
+       ROUND(45.926, 0),
+       ROUND(45.926, -1)
+FROM DUAL;
+```
