@@ -1,7 +1,7 @@
 /*
-Q1. SALES ºÎ¼­¿¡ ±Ù¹«ÇÏ°í, 1981³â »ó¹Ý±â(1¿ù-6¿ù)¿¡ ÀÔ»çÇÑ »ç¿ø Á¤º¸¸¦ °Ë»öÇÏ½Ã¿À. 
-    ÀÌ¶§ Ä¿¹Ì¼ÇÀ» ÇÕÇÑ ±Þ¿©(SAL + COMM)¸¦ ÇÔ²² °Ë»öÇÏ°í ÀÔ»ç ÀÏÀÚ ¼øÀ¸·Î Á¤·ÄÇÕ´Ï´Ù.
-    °Ë»ö ´ë»ó ÄÃ·³: empno, ename, hiredate, sal + comm
+Q1. SALES ë¶€ì„œì— ê·¼ë¬´í•˜ê³ , 1981ë…„ ìƒë°˜ê¸°(1ì›”-6ì›”)ì— ìž…ì‚¬í•œ ì‚¬ì› ì •ë³´ë¥¼ ê²€ìƒ‰í•˜ì‹œì˜¤. 
+    ì´ë•Œ ì»¤ë¯¸ì…˜ì„ í•©í•œ ê¸‰ì—¬(SAL + COMM)ë¥¼ í•¨ê»˜ ê²€ìƒ‰í•˜ê³  ìž…ì‚¬ ì¼ìž ìˆœìœ¼ë¡œ ì •ë ¬í•©ë‹ˆë‹¤.
+    ê²€ìƒ‰ ëŒ€ìƒ ì»¬ëŸ¼: empno, ename, hiredate, sal + comm
 */
 SELECT E.EMPNO, E.ENAME, E.HIREDATE, NVL(E.SAL, 0) + NVL(E.COMM, 0) AS TOTAL_SAL
 FROM EMP E JOIN DEPT D
@@ -11,9 +11,9 @@ WHERE D.DNAME = 'SALES'
                      AND TO_DATE('19810701', 'YYYYMMDD') - 1/86400
 ORDER BY 3;
 
--- Á¶ÀÎÀ» »ç¿ëÇÏ¸é ºÒÇÊ¿äÇÑ Å×ÀÌºíÀÇ Á¤º¸±îÁö ´Ù ºÒ·¯¿À±â ¶§¹®¿¡
--- ÇÊ¿äÇÑ ÄÃ·³À» º¸°í ÇÑ Å×ÀÌºí¿¡¼­ ¸ðµç Á¶°ÇÀ» ¸¸Á·½ÃÅ³ ¼ö ÀÖµð¸é
--- ¼­ºêÄõ¸®¸¦ »ç¿ëÇÏ´Â °ÍÀÌ ´õ ³ªÀº ½À°ü
+-- ì¡°ì¸ì„ ì‚¬ìš©í•˜ë©´ ë¶ˆí•„ìš”í•œ í…Œì´ë¸”ì˜ ì •ë³´ê¹Œì§€ ë‹¤ ë¶ˆëŸ¬ì˜¤ê¸° ë•Œë¬¸ì—
+-- í•„ìš”í•œ ì»¬ëŸ¼ì„ ë³´ê³  í•œ í…Œì´ë¸”ì—ì„œ ëª¨ë“  ì¡°ê±´ì„ ë§Œì¡±ì‹œí‚¬ ìˆ˜ ìžˆë””ë©´
+-- ì„œë¸Œì¿¼ë¦¬ë¥¼ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ë” ë‚˜ì€ ìŠµê´€
 SELECT EMPNO, ENAME, HIREDATE, NVL(SAL, 0) + NVL(COMM,0)
 FROM EMP 
 WHERE HIREDATE BETWEEN TO_DATE('19810101','YYYYMMDD')
@@ -25,10 +25,10 @@ ORDER BY 3;
 
 
 /*
-Q2. JOBÀÌ 'MANAGER'ÀÎ »ç¿øµéÀÇ ºÎ¼­ Á¤º¸ ¹× »ç¿ø Á¤º¸¸¦ °Ë»öÇÏ½Ã¿À. 
-    °Ë»ö ´ë»ó ÄÃ·³: DEPTNO, DNAME, EMPNO, ENAME, JOB, SAL 
+Q2. JOBì´ 'MANAGER'ì¸ ì‚¬ì›ë“¤ì˜ ë¶€ì„œ ì •ë³´ ë° ì‚¬ì› ì •ë³´ë¥¼ ê²€ìƒ‰í•˜ì‹œì˜¤. 
+    ê²€ìƒ‰ ëŒ€ìƒ ì»¬ëŸ¼: DEPTNO, DNAME, EMPNO, ENAME, JOB, SAL 
 */
--- ÄÃ·³¸í¿¡ ¾î´À Å×ÀÌºíÀÇ ÄÃ·³ÀÎÁö ¸í½ÃÇØÁÖ¸é ¼º´É Çâ»ó¿¡ µµ¿òÀÌ µÉ ¼ö ÀÖÀ½
+-- ì»¬ëŸ¼ëª…ì— ì–´ëŠ í…Œì´ë¸”ì˜ ì»¬ëŸ¼ì¸ì§€ ëª…ì‹œí•´ì£¼ë©´ ì„±ëŠ¥ í–¥ìƒì— ë„ì›€ì´ ë  ìˆ˜ ìžˆìŒ
 SELECT D.DEPTNO, D.DNAME, E.EMPNO, E.ENAME, E.JOB, E.SAL
 FROM DEPT D JOIN EMP E
   ON D.DEPTNO = E.DEPTNO
@@ -36,8 +36,8 @@ WHERE E.JOB = 'MANAGER';
 
 
 /*
-Q3. 'Canada'¿¡¼­ ±Ù¹« ÁßÀÎ »ç¿ø Á¤º¸¸¦ ´ÙÀ½°ú °°ÀÌ °Ë»öÇÏ½Ã¿À.
-    °Ë»ö ´ë»ó ÄÃ·³: first_name, last_name, salary, job_id, country_name
+Q3. 'Canada'ì—ì„œ ê·¼ë¬´ ì¤‘ì¸ ì‚¬ì› ì •ë³´ë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ê²€ìƒ‰í•˜ì‹œì˜¤.
+    ê²€ìƒ‰ ëŒ€ìƒ ì»¬ëŸ¼: first_name, last_name, salary, job_id, country_name
 */
 SELECT E.FIRST_NAME, E.LAST_NAME, E.SALARY, E.JOB_ID, C.COUNTRY_NAME
 FROM EMPLOYEES E JOIN DEPARTMENTS D
@@ -50,8 +50,8 @@ WHERE C.COUNTRY_NAME = 'Canada';
 
 
 /*
-Q4. CUSTOMERS, ORDERS Å×ÀÌºíÀ» »ç¿ëÇÏ¿©, °í°´º° ÁÖ¹® ±Ý¾×ÀÇ ÇÕ°è¸¦ °Ë»öÇÏ½Ã¿À. 
-    °Ë»ö ´ë»ó ÄÃ·³: CUST_ID, CUST_FNAME, CUST_LNAME, SUM(orders.order_total)
+Q4. CUSTOMERS, ORDERS í…Œì´ë¸”ì„ ì‚¬ìš©í•˜ì—¬, ê³ ê°ë³„ ì£¼ë¬¸ ê¸ˆì•¡ì˜ í•©ê³„ë¥¼ ê²€ìƒ‰í•˜ì‹œì˜¤. 
+    ê²€ìƒ‰ ëŒ€ìƒ ì»¬ëŸ¼: CUST_ID, CUST_FNAME, CUST_LNAME, SUM(orders.order_total)
 */
 SELECT C.CUST_ID, C.CUST_FNAME, C.CUST_LNAME, SUM(O.ORDER_TOTAL) AS SUM
 FROM CUSTOMERS C JOIN ORDERS O
@@ -60,7 +60,7 @@ GROUP BY C.CUST_ID, C.CUST_FNAME, C.CUST_LNAME;
 
 
 /*
-Q5. DEPT, EMP Å×ÀÌºíÀ» »ç¿ëÇÏ¿©, ´ÙÀ½ °á°ú¸¦ °Ë»öÇÏ½Ã¿À. 
+Q5. DEPT, EMP í…Œì´ë¸”ì„ ì‚¬ìš©í•˜ì—¬, ë‹¤ìŒ ê²°ê³¼ë¥¼ ê²€ìƒ‰í•˜ì‹œì˜¤. 
 
    DEPTNO DNAME             ANALYST      CLERK    MANAGER  PRESIDENT   SALESMAN
 ---------- -------------- ---------- ---------- ---------- ---------- ----------
@@ -75,6 +75,17 @@ SELECT D.DEPTNO, D.DNAME,
        SUM(DECODE(E.JOB, 'MANAGER', E.SAL, 0)) AS MANAGER,
        SUM(DECODE(E.JOB, 'PRESIDENT', E.SAL, 0)) AS PRESIDENT,
        SUM(DECODE(E.JOB, 'SALESMAN', E.SAL, 0)) AS SALESMAN
+FROM DEPT D LEFT JOIN EMP E
+  ON D.DEPTNO = E.DEPTNO
+GROUP BY D.DEPTNO, D.DNAME
+ORDER BY 1;
+
+SELECT D.DEPTNO, D.DNAME, 
+       SUM(CASE E.JOB WHEN 'ANALYST' THEN E.SAL ELSE 0 END) AS ANALYST,
+       SUM(CASE E.JOB WHEN 'CLERK' THEN E.SAL ELSE 0 END) AS CLERK,
+       SUM(CASE E.JOB WHEN 'MANAGER' THEN E.SAL ELSE 0 END) AS MANAGER,
+       SUM(CASE E.JOB WHEN 'PRESIDENT' THEN E.SAL ELSE 0 END) AS PRESIDENT,
+       SUM(CASE E.JOB WHEN 'SALESMAN' THEN E.SAL ELSE 0 END) AS SALESMAN
 FROM DEPT D LEFT JOIN EMP E
   ON D.DEPTNO = E.DEPTNO
 GROUP BY D.DEPTNO, D.DNAME
