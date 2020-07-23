@@ -1,7 +1,7 @@
 /*
-Q1. SOURCE_DATA Å×ÀÌºíÀ» ÀÌ¿ëÇÏ¿©, 
-    13~16 ÁÖÂ÷¿¡ ¿äÀÏº° ÆÇ¸Å ¼ö·®ÀÇ ÇÕ°è¸¦ °Ë»ö
-    ´Ü, WEEK_ID ¼øÀ¸·Î Á¤·Ä
+Q1. SOURCE_DATA í…Œì´ë¸”ì„ ì´ìš©í•˜ì—¬, 
+    13~16 ì£¼ì°¨ì— ìš”ì¼ë³„ íŒë§¤ ìˆ˜ëŸ‰ì˜ í•©ê³„ë¥¼ ê²€ìƒ‰
+    ë‹¨, WEEK_ID ìˆœìœ¼ë¡œ ì •ë ¬
 
    WEEK_ID SUM(SALES_MON) SUM(SALES_TUE) SUM(SALES_WED) SUM(SALES_THUR) SUM(SALES_FRI)
 ---------- -------------- -------------- -------------- --------------- --------------
@@ -23,9 +23,9 @@ ORDER BY WEEK_ID;
 
 
 /*
-Q2. SALES_INFO Å×ÀÌºíÀ» ÀÌ¿ëÇÏ¿©, 
-    13~16 ÁÖÂ÷¿¡ ¿äÀÏº° ÆÇ¸Å ¼ö·®ÀÇ ÇÕ°è¸¦ °Ë»ö
-    ´Ü, WEEK_ID, ¿äÀÏ ¼øÀ¸·Î Á¤·Ä
+Q2. SALES_INFO í…Œì´ë¸”ì„ ì´ìš©í•˜ì—¬, 
+    13~16 ì£¼ì°¨ì— ìš”ì¼ë³„ íŒë§¤ ìˆ˜ëŸ‰ì˜ í•©ê³„ë¥¼ ê²€ìƒ‰
+    ë‹¨, WEEK_ID, ìš”ì¼ ìˆœìœ¼ë¡œ ì •ë ¬
 	
    WEEK_ID DAY  SUM(SALES_QTY)
 ---------- ---- --------------
@@ -50,7 +50,7 @@ Q2. SALES_INFO Å×ÀÌºíÀ» ÀÌ¿ëÇÏ¿©,
         16 THUR           2623
         16 FRI            1866
 
-20°³ ÇàÀÌ ¼±ÅÃµÇ¾ú½À´Ï´Ù. 
+20ê°œ í–‰ì´ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤. 
 */
 SELECT WEEK_ID, DAY, SUM(SALES_QTY)
   FROM SALES_INFO                
@@ -66,7 +66,7 @@ ORDER BY WEEK_ID, CASE DAY WHEN 'MON' THEN 0
 
 
 /*
-Q3. 13~16ÁÖÂ÷ÀÇ SOURCE_DATA Å×ÀÌºíÀÇ µ¥ÀÌÅÍ¸¦ ´ÙÀ½°ú °°ÀÌ °Ë»ö 
+Q3. 13~16ì£¼ì°¨ì˜ SOURCE_DATA í…Œì´ë¸”ì˜ ë°ì´í„°ë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ê²€ìƒ‰ 
 
      EMPNO       YEAR    WEEK_ID DAY   SALES_QTY
 ---------- ---------- ---------- ---- ----------
@@ -90,7 +90,7 @@ Q3. 13~16ÁÖÂ÷ÀÇ SOURCE_DATA Å×ÀÌºíÀÇ µ¥ÀÌÅÍ¸¦ ´ÙÀ½°ú °°ÀÌ °Ë»ö
       7654       2016         16 WED         762
 ...
 
-80°³ ÇàÀÌ ¼±ÅÃµÇ¾ú½À´Ï´Ù. 
+80ê°œ í–‰ì´ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤. 
 */
 SELECT S.EMPNO, S.YEAR, S.WEEK_ID,
        CASE NUM WHEN 1 THEN 'MON'
@@ -113,3 +113,35 @@ CROSS JOIN
          FROM DUAL
       CONNECT BY LEVEL <= 5 ) D
 ORDER BY S.EMPNO, S.WEEK_ID, D.NUM;
+
+
+
+-- ì£¼ì°¨ë³„ í•©ê³„
+SELECT WEEK_ID, 
+       SUM(CASE DAY WHEN 'MON' THEN SUM_QTY END) AS MON,
+       SUM(CASE DAY WHEN 'TUE' THEN SUM_QTY END) AS TUE,
+       SUM(CASE DAY WHEN 'WED' THEN SUM_QTY END) AS WED,
+       SUM(CASE DAY WHEN 'THUR' THEN SUM_QTY END) AS THUR,
+       SUM(CASE DAY WHEN 'FRI' THEN SUM_QTY END) AS FRI
+FROM ( SELECT WEEK_ID, DAY, SUM(SALES_QTY) AS SUM_QTY
+         FROM ( SELECT S.EMPNO, S.YEAR, S.WEEK_ID,
+                       CASE NUM WHEN 1 THEN 'MON' 
+      			                WHEN 2 THEN 'TUE'
+      					        WHEN 3 THEN 'WED'
+      					        WHEN 4 THEN 'THUR'
+      					        WHEN 5 THEN 'FRI' 
+                            END AS DAY,
+                       CASE NUM WHEN 1 THEN SALES_MON
+                               WHEN 2 THEN SALES_TUE
+                               WHEN 3 THEN SALES_WED
+                               WHEN 4 THEN SALES_THUR
+                               WHEN 5 THEN SALES_FRI
+                           END AS SALES_QTY
+                  FROM SOURCE_DATA S
+         CROSS JOIN
+              ( SELECT LEVEL AS NUM
+                  FROM DUAL
+                CONNECT BY LEVEL <= 5 ) D )
+         GROUP BY WEEK_ID, DAY )
+WHERE WEEK_ID BETWEEN 13 AND 16
+GROUP BY WEEK_ID ;
