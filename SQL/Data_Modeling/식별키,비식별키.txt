@@ -1,0 +1,118 @@
+DROP TABLE regions CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE regions (
+    region_id     NUMBER,
+    region_name   VARCHAR2(25 BYTE),
+	CONSTRAINT reg_id_pk PRIMARY KEY ( region_id )
+);
+
+DROP TABLE countries CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE countries (
+    country_id     CHAR(2 BYTE),
+    country_name   VARCHAR2(40 BYTE),
+    region_id      NUMBER,
+    CONSTRAINT country_c_id_pk PRIMARY KEY ( country_id ),
+	CONSTRAINT country_r_id_fk FOREIGN KEY ( region_id ) REFERENCES regions(region_id)
+);
+
+DROP TABLE locations CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE locations (
+    location_id      NUMBER(4,0),
+    street_address   VARCHAR2(40 BYTE),
+    postal_code      VARCHAR2(12 BYTE),
+    city             VARCHAR2(30 BYTE),
+    state_province   VARCHAR2(25 BYTE),
+    country_id       CHAR(2 BYTE),
+    CONSTRAINT loc_id_pk PRIMARY KEY ( location_id ),
+	CONSTRAINT loc_id_fk FOREIGN KEY ( country_id ) REFERENCES countries(country_id)
+);
+
+DROP TABLE departments CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE departments (
+    department_id     NUMBER(4,0),
+    department_name   VARCHAR2(30 BYTE),
+    manager_id        NUMBER(6,0),
+    location_id       NUMBER(4,0),
+    CONSTRAINT dept_id_pk PRIMARY KEY ( department_id ),
+	CONSTRAINT dept_id_fk FOREIGN KEY ( location_id ) REFERENCES locations(location_id)
+);
+
+DROP TABLE employees CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE employees (
+    employee_id      NUMBER(6,0),
+    first_name       VARCHAR2(20 BYTE),
+    last_name        VARCHAR2(25 BYTE),
+    email            VARCHAR2(25 BYTE),
+    phone_number     VARCHAR2(20 BYTE),
+    hire_date        DATE,
+    job_id           VARCHAR2(10 BYTE),
+    salary           NUMBER(8,2),
+    commission_pct   NUMBER(2,2),
+    manager_id       NUMBER(6,0),
+    department_id    NUMBER(4,0),
+    CONSTRAINT emp_emp_id_pk PRIMARY KEY ( employee_id ),
+	CONSTRAINT emp_id_fk FOREIGN KEY ( department_id ) REFERENCES departments(department_id)
+); 
+
+
+=======================================================
+DROP TABLE regions CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE regions (
+    region_id     NUMBER,
+    region_name   VARCHAR2(25 BYTE),
+	CONSTRAINT reg_id_pk PRIMARY KEY ( region_id )
+);
+
+DROP TABLE countries CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE countries (
+	region_id      NUMBER,
+    country_id     CHAR(2 BYTE),
+    country_name   VARCHAR2(40 BYTE),
+    CONSTRAINT country_c_id_pk PRIMARY KEY ( region_id, country_id ),
+	CONSTRAINT country_r_id_fk FOREIGN KEY ( region_id ) REFERENCES regions(region_id)
+);
+
+DROP TABLE locations CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE locations (
+	region_id        NUMBER,
+    country_id       CHAR(2 BYTE),
+    location_id      NUMBER(4,0),
+    street_address   VARCHAR2(40 BYTE),
+    postal_code      VARCHAR2(12 BYTE),
+    city             VARCHAR2(30 BYTE),
+    state_province   VARCHAR2(25 BYTE),
+    CONSTRAINT loc_id_pk PRIMARY KEY ( region_id, country_id, location_id ),
+	CONSTRAINT loc_id_fk FOREIGN KEY ( region_id, country_id ) REFERENCES countries(region_id,country_id)	
+);
+
+DROP TABLE departments CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE departments (
+	region_id         NUMBER,
+    country_id        CHAR(2 BYTE),
+    location_id       NUMBER(4,0),
+    department_id     NUMBER(4,0),
+    department_name   VARCHAR2(30 BYTE),
+    manager_id        NUMBER(6,0),
+    CONSTRAINT dept_id_pk PRIMARY KEY ( region_id, country_id, location_id, department_id ),
+	CONSTRAINT dept_id_fk FOREIGN KEY ( region_id, country_id, location_id ) REFERENCES locations(region_id, country_id, location_id)
+);
+
+DROP TABLE employees CASCADE CONSTRAINTS PURGE; 
+CREATE TABLE employees (
+	region_id        NUMBER,
+    country_id       CHAR(2 BYTE),
+    location_id      NUMBER(4,0),
+    department_id    NUMBER(4,0),
+    employee_id      NUMBER(6,0),
+    first_name       VARCHAR2(20 BYTE),
+    last_name        VARCHAR2(25 BYTE),
+    email            VARCHAR2(25 BYTE),
+    phone_number     VARCHAR2(20 BYTE),
+    hire_date        DATE,
+    job_id           VARCHAR2(10 BYTE),
+    salary           NUMBER(8,2),
+    commission_pct   NUMBER(2,2),
+    manager_id       NUMBER(6,0),
+    CONSTRAINT emp_emp_id_pk PRIMARY KEY ( region_id, country_id, location_id, department_id, employee_id ),
+	CONSTRAINT emp_id_fk FOREIGN KEY ( region_id, country_id, location_id, department_id ) REFERENCES departments(region_id, country_id, location_id, department_id)	
+); 
+

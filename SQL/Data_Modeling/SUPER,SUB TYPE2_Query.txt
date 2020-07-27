@@ -1,0 +1,153 @@
+SELECT c.cust_id, c.cust_name, c.tax_num, 
+       o.order_id, o.order_date, o.order_total
+FROM cust2c    c
+    ,orders2   o 
+WHERE c.cust_id   = o.cust_id 
+  AND o.cust_type = 1 ;  
+
+SELECT c.cust_id, c.cust_name, c.jumin_num, 
+       o.order_id, o.order_date, o.order_total
+FROM cust2p     c
+    ,orders2    o 
+WHERE c.cust_id   = o.cust_id 
+  AND o.cust_type = 2 ;  
+  
+SELECT c.cust_id, c.cust_type, c.cust_name, c.jumin_num, c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM (SELECT cust_id, cust_name, cust_type, jumin_num, null as tax_num
+      FROM cust2p
+      UNION ALL
+      SELECT cust_id, cust_name, cust_type, null, tax_num 
+      FROM cust2c) c
+    ,orders2    o 
+WHERE c.cust_id   = o.cust_id
+  AND c.cust_type = o.cust_type ;  
+
+SELECT NVL(c.cust_id,p.cust_id)       AS cust_id, 
+       NVL(c.cust_type,p.cust_type)   AS cust_type,
+       NVL(c.cust_name,p.cust_name)   AS cust_name,
+       p.jumin_num, 
+       c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM orders2 o,
+     cust2p  p,
+     cust2c  c 
+WHERE o.cust_id = p.cust_id (+)
+  AND o.cust_id = c.cust_id (+)
+  AND o.cust_type = p.cust_type (+) 
+  AND o.cust_type = c.cust_type (+) ; 
+  
+-------------------------------------------------------------------------------
+
+TRUNCATE TABLE order_items2 ;
+TRUNCATE TABLE orders2 ;
+DELETE orders2 ;
+COMMIT ;
+TRUNCATE TABLE cust2p;
+TRUNCATE TABLE cust2c;
+
+INSERT INTO cust2c
+SELECT cust_id, cust_name,1, address, cust_email, phone_number, tax_num,manager_name, join_date
+FROM customers
+WHERE cust_type = 1 ; 
+commit ; 
+
+INSERT INTO cust2p
+SELECT cust_id, cust_name, 2, address, cust_email, phone_number, jumin_num, join_date
+FROM customers
+WHERE cust_type = 2 ; 
+commit ; 
+
+insert into orders2 
+select b.order_id, b.order_date, b.order_mode, a.cust_id, 1, b.order_status, b.order_total  
+from (SELECT cust_id, cust_name, address, cust_email, phone_number, jumin_num, join_date
+      FROM customers
+      WHERE cust_type = 1) a 
+    ,orders  b
+WHERE a.cust_id = b.cust_id ;     
+
+insert into orders2 
+select b.order_id, b.order_date, b.order_mode, a.cust_id, 2, b.order_status, b.order_total  
+from (SELECT cust_id, cust_name, address, cust_email, phone_number, jumin_num, join_date
+      FROM customers
+      WHERE cust_type = 2) a 
+    ,orders  b
+WHERE a.cust_id = b.cust_id ;     
+
+commit; 
+
+INSERT INTO order_items2 SELECT * FROM order_items ;
+COMMIT ;
+
+--------------------------------------------------------------------------
+
+SELECT c.cust_id, c.cust_name, c.jumin_num, 
+       o.order_id, o.order_date, o.order_total
+FROM cust2p     c
+    ,orders2    o 
+WHERE c.cust_id   = o.cust_id 
+--  AND o.cust_type = 2 
+;  
+  
+SELECT c.cust_id, c.cust_name, c.tax_num, 
+       o.order_id, o.order_date, o.order_total
+FROM cust2c    c
+    ,orders2   o 
+WHERE c.cust_id   = o.cust_id 
+--  AND o.cust_type = 1 
+;  
+
+SELECT c.cust_id, c.cust_type, c.cust_name, c.jumin_num, c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM (SELECT cust_id, cust_name, cust_type, jumin_num, null as tax_num
+      FROM cust2p
+      UNION ALL
+      SELECT cust_id, cust_name, cust_type, null, tax_num 
+      FROM cust2c) c
+    ,orders2    o 
+WHERE c.cust_id   = o.cust_id
+--  AND c.cust_type = o.cust_type 
+;  
+
+SELECT NVL(c.cust_id,p.cust_id)       AS cust_id, 
+       NVL(c.cust_type,p.cust_type)   AS cust_type,
+       NVL(c.cust_name,p.cust_name)   AS cust_name,
+       p.jumin_num, 
+       c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM orders2 o,
+     cust2p  p,
+     cust2c  c 
+WHERE o.cust_id = p.cust_id (+)
+  AND o.cust_id = c.cust_id (+)
+--  AND o.cust_type = p.cust_type (+) 
+--  AND o.cust_type = c.cust_type (+) 
+; 
+  
+SELECT NVL(c.cust_id,p.cust_id)       AS cust_id, 
+       NVL(c.cust_type,p.cust_type)   AS cust_type,
+       NVL(c.cust_name,p.cust_name)   AS cust_name,
+       p.jumin_num, 
+       c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM orders2 o,
+     cust2p  p,
+     cust2c  c 
+WHERE o.cust_id = p.cust_id (+)
+  AND o.cust_id = c.cust_id (+)
+  AND o.cust_id = 105 
+; 
+  
+SELECT NVL(c.cust_id,p.cust_id)       AS cust_id, 
+       NVL(c.cust_type,p.cust_type)   AS cust_type,
+       NVL(c.cust_name,p.cust_name)   AS cust_name,
+       p.jumin_num, 
+       c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM orders2 o,
+     cust2p  p,
+     cust2c  c 
+WHERE DECODE(o.cust_type,1,o.cust_id) = c.cust_id (+)
+  AND DECODE(o.cust_type,2,o.cust_id) = p.cust_id (+)
+  AND o.cust_id                       = 105
+; 
