@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CUSTOMERS" directorySegmentName="seg_0" id="24543A41-5626-9392-4981-611B6EB6AA6D">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>F2BC4D45-25F6-3CAF-1572-834A55A81375</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>56AAAF76-3C76-EB21-7F35-F7EF0A495B1B</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="JUMIN_NUM" id="1CBE6443-CD92-1ED3-D2B4-D1A8BB65C8AE">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_ID" id="28C9EBD7-BAF3-42D5-9E71-E673E976F248">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="80708C31-CFC7-7742-C155-31D9F298C262">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_NAME" id="8C0070F1-2E4F-51E0-54D6-4C340AFAF168">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_TYPE" id="983E7832-C8F5-C88B-A275-9D746ABBF6D1">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAX_NUM" id="98E246E7-F866-D734-660E-1AB786253796">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="A631AC26-02EA-8A29-8F7E-211B99AB6040">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_EMAIL" id="CF088A68-A500-80D7-3402-ABA01D0E1A43">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOIN_DATE" id="D8926F17-C8E6-FC40-A002-F9855AC9AC7D">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANAGER_NAME" id="FB0DF4F6-3268-A89A-09ED-BAE77C415261">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUST_PK" id="A52EE06A-A8A3-0D54-6D95-28B7BF59CCEA">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>F2BC4D45-25F6-3CAF-1572-834A55A81375</schemaObject>
+<segment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUST_PK" id="851C358F-D325-CFF6-C87A-86372C222F02">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<segment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+<existingIndex>A52EE06A-A8A3-0D54-6D95-28B7BF59CCEA</existingIndex>
+<indexSegment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A9082C4-FB0D-653A-8BDF-B702123CD333" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="SALES_VIEW">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>SALES_VIEW</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY" id="44E1588E-1D4F-C8CB-71C5-9D3795C8F23E">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>SALES_VIEW</sourceObjSchema>
+<sourceObjName>COUNTRY</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROD" id="835AEAE0-B6A3-E0FD-5916-842650BF0D92">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>SALES_VIEW</sourceObjSchema>
+<sourceObjName>PROD</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="BF10F356-00EB-0108-A36E-2D16F798D5C5">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>SALES_VIEW</sourceObjSchema>
+<sourceObjName>YEAR</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALE" id="0287E455-2E15-1C2E-E48B-772E5E1D9685">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>SALES_VIEW</sourceObjSchema>
+<sourceObjName>SALE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNT" id="649B91E9-A88C-64FB-6920-0DC625659C2B">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>SALES_VIEW</sourceObjSchema>
+<sourceObjName>CNT</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

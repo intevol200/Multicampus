@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15A3B7F8-BF30-E551-C65F-83A8BB7899BA" name="비품">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>46CF5FDB-FD83-627F-4036-2E72A370640A</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="비품코드" id="26D328C4-967C-B8E5-E4FF-E34BDD15304A">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>6CAFD0D4-B513-2ECC-3FFA-8A9D191B35CF</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="비품명" id="1F1BBA71-8F5E-451F-0818-744AFA8ECAC6">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>7C43D7CC-AD57-8BB5-EC66-20896F7A487C</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="보유개수" id="A68F7AC2-728C-A70C-987A-4720FF86947B">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>08ED3FC7-4CA9-6388-5A10-E646D33682E6</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="관리업체_업체ID" id="35084193-9D13-644F-3CA1-2D1F7AD6E9E2">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>6AB929F9-9E07-08F9-1051-14E17FFDD6F8</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD059838-DF66-FE43-93E3-84E36B846CA5" referredColumn="79610BAE-214C-333A-2EB9-9BC932054F6C"/>
+</associations>
+</Column>
+<Column name="관리인_관리자ID" id="AF718DC9-E834-D3FD-9EA9-DDB52A0829F8">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>770471B4-B63D-0A9F-2856-1B3CBEB682AC</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E0662A2-7855-FEB3-9D8A-01268332DA39" referredColumn="F9EAE3EE-4DB0-13E4-446E-2F96D0743CBE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A76CC682-7717-A739-761C-2465BD7BB227" name="비품_PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>89D6EAB6-74EB-8121-4718-3069ABC3EE42</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35084193-9D13-644F-3CA1-2D1F7AD6E9E2"/>
+<colUsage columnID="AF718DC9-E834-D3FD-9EA9-DDB52A0829F8"/>
+<colUsage columnID="26D328C4-967C-B8E5-E4FF-E34BDD15304A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7F3DB99-BEB5-749D-1680-DE6D74B9D7DE" name="비품_관리업체_FK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>4EC3A04E-342C-82A6-D29C-E6D9B7E9D362</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35084193-9D13-644F-3CA1-2D1F7AD6E9E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="936DDBCF-4974-45DE-2E84-EFA5AC46F19A" name="비품_관리인_FK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>1714A545-70D1-82F0-68CB-D5D97214B4EC</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF718DC9-E834-D3FD-9EA9-DDB52A0829F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

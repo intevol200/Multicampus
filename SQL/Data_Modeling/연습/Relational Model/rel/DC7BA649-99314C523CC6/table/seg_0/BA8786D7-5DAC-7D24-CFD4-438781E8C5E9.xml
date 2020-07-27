@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA8786D7-5DAC-7D24-CFD4-438781E8C5E9" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="BLACKLIST">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>BLACKLIST</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="EC7CAC5C-A071-6622-192C-96151B8478D1">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>BLACKLIST</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA34A3E9-107E-71B5-A13A-84D876659E89" referredColumn="99A718C4-707D-F548-8F31-95EF7E8FB3C7"/>
+</associations>
+</Column>
+<Column name="REASON_CODE" id="603194A9-E8B9-D6CB-F38D-7B03790DD3E6">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>BLACKLIST</sourceObjSchema>
+<sourceObjName>REASON_CODE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_EMPID" id="0C2173C3-AFAD-BF70-DE89-DFD9A087463C">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>BLACKLIST</sourceObjSchema>
+<sourceObjName>UPDATE_EMPID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_DATE" id="1D6B526F-D82B-A506-7F08-1E5A6395A87F">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>BLACKLIST</sourceObjSchema>
+<sourceObjName>UPDATE_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D9A34AB-9B68-CB4A-CCC1-0A2C2D6AB22C" name="BKLIST_PK_CUSTID">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>BKLIST_PK_CUSTID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC7CAC5C-A071-6622-192C-96151B8478D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="990F0C9A-7054-6718-4DF6-D0603639FC84" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="BKLIST_IX01">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>BKLIST_IX01</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC7CAC5C-A071-6622-192C-96151B8478D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0008A7A4-BA9F-9F71-5C3D-472FC732E958" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="BKLIST_IX02">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>BKLIST_IX02</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C2173C3-AFAD-BF70-DE89-DFD9A087463C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83469422-E5C6-A6AB-4A7F-329B2319E5E8" name="BKLIST_FK_CUSTID">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC7CAC5C-A071-6622-192C-96151B8478D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

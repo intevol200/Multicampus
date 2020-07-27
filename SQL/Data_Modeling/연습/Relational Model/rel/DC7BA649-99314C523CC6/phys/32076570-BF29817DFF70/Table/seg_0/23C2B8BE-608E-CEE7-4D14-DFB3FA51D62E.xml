@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMP" directorySegmentName="seg_0" id="23C2B8BE-608E-CEE7-4D14-DFB3FA51D62E">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>90CF0A26-C398-6396-9856-CFF2E7B856EC</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MGR" id="1E432CA4-C98B-645A-1249-19CB388C9B73">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPNO" id="41BF5099-2331-5BD6-27CC-31D480713EFC">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENAME" id="57222E58-E16D-EC6F-2BA0-FB292532CC2D">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTNO" id="69346452-357C-A398-0B01-4D906944ED5A">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAL" id="72DB77DC-EA56-880E-3286-07C317A74F24">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMM" id="8375E85A-F498-B15D-8497-1C9CEE5EB52E">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB" id="9E22B654-45D7-01CB-865D-A11A7849CCD3">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIREDATE" id="B4E0A889-6D1A-10BA-37D1-7F0CAD5361B1">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_DEPTNO_IX" id="0E58BBD8-F266-2427-CE44-5B44ED74AC05">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_ENAME_IX" id="4D33695B-5D1F-AE14-B296-CD0BD2FF79A2">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMPNO_IX" id="4F1EF6D6-7582-2821-7EA6-E4139B531F2C">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_MGR_IX" id="6CE6988F-7ACF-5D6C-2B28-72DCCB523EFE">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_SAL_IX" id="B47C2FD8-7100-12C9-5251-A00EA25DDAE7">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_JOB_IX" id="B96BFC78-964F-CC35-E37B-FAECE137BCFD">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_HIRE_IX" id="E6F0C2BC-6424-0E49-B336-024772F7ECD8">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_COMM_IX" id="ED3C2BD8-FDE6-DF32-C08B-1F991DE492AF">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_DEPTNO_FK" id="5BBBB48E-25C0-1419-18A0-A614DC6387E4">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMP_PK" id="DB56A2E6-4F2F-6D7D-789A-FBC964FCC09C">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<segment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+<existingIndex>4F1EF6D6-7582-2821-7EA6-E4139B531F2C</existingIndex>
+<indexSegment>E41B2B76-556B-7F9E-066C-8DFD22A2D04A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78811580-B254-753E-ABA0-9EECAC0B2FBF" name="출석부">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>074F08D9-731F-E623-8A5F-CC35F05F7435</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="출석여부" id="C59A3E96-29A5-AD5F-B4BF-574C75885C8A">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>77D045B0-AD3A-AEC2-9268-74A7B6462F7C</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출석일자" id="F862C196-CB94-17A9-FBED-5A564AF3A7B2">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>F1601DE8-D7C3-57CC-ECFB-E0572A82A11C</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="수강내역_학생_학생ID" id="2E8A2117-265D-66B9-AC54-210BB4A1D762">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>B5E9BAE9-0E7B-F0A4-3021-F09A094788D2</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA3D09F6-E80B-0617-5F18-58E1AB6ED9A4" referredColumn="52935E5B-FEFB-CA13-BFFF-4E29AB5E93CE"/>
+</associations>
+</Column>
+<Column name="수강내역_강사_강사ID" id="9E1D58C7-7BC4-7F58-61A8-7A8ED49698FB">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>AF2F6B85-AD5F-97D3-9BD9-977FAA4B5448</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA3D09F6-E80B-0617-5F18-58E1AB6ED9A4" referredColumn="17C22CC7-BBE1-DF3F-90B4-2C0FED56CEC7"/>
+</associations>
+</Column>
+<Column name="수강내역_매니저_사번" id="D58A972A-8533-B6D9-F584-72D2FCC92461">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>114A2538-DD10-FF59-F65C-68221F00270E</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA3D09F6-E80B-0617-5F18-58E1AB6ED9A4" referredColumn="992371C1-2C2A-FE9D-65A4-81B1D8802F95"/>
+</associations>
+</Column>
+<Column name="수강내역_프로그램_프로그램ID" id="E7166C61-B815-8DC5-4085-48D54CD8E3D9">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>078F2FBA-CE15-EA55-9993-18C9833D429B</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA3D09F6-E80B-0617-5F18-58E1AB6ED9A4" referredColumn="70615405-D778-2704-DFA7-756822AA6E3A"/>
+</associations>
+</Column>
+<Column name="수강내역_프로그램_강의실_강의실ID" id="6B5E435F-5236-A3AE-68F9-85550CFA3A14">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>31BB45B3-EF9C-0210-25B5-8F7D62D56EE1</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA3D09F6-E80B-0617-5F18-58E1AB6ED9A4" referredColumn="158D1EBD-A398-C9CB-23DC-80BED0E03E6B"/>
+</associations>
+</Column>
+<Column name="수강내역_프로그램_강의실_관리인_관리자ID" id="A4841B3C-7B13-59DC-EDC6-FAD8621183F5">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>228B0CEF-27C7-4D93-FC92-4B2674858FF1</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA3D09F6-E80B-0617-5F18-58E1AB6ED9A4" referredColumn="F4E6EC51-2416-1A3A-CF2D-6F518627E642"/>
+</associations>
+</Column>
+<Column name="출석일렬번호" id="0780724C-4133-61E9-90D8-C88293F33E7F">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:02:08 UTC</createdTime>
+<generatorID>D19C6B48-549F-BEE4-A0A9-3B79B227FF6E</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="973F154A-75CE-C1E2-C3EE-344010628FB8" name="출석부_PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>E637AE33-FA74-D29A-927E-D4DFA294C74E</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0780724C-4133-61E9-90D8-C88293F33E7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2927E9F-2C8B-3F69-7E80-582B351D0BF4" name="출석부__IDX">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EEAB4D78-8860-8F27-13D0-8941F94E1605</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2E8A2117-265D-66B9-AC54-210BB4A1D762"/>
+<colUsage columnID="9E1D58C7-7BC4-7F58-61A8-7A8ED49698FB"/>
+<colUsage columnID="D58A972A-8533-B6D9-F584-72D2FCC92461"/>
+<colUsage columnID="E7166C61-B815-8DC5-4085-48D54CD8E3D9"/>
+<colUsage columnID="6B5E435F-5236-A3AE-68F9-85550CFA3A14"/>
+<colUsage columnID="A4841B3C-7B13-59DC-EDC6-FAD8621183F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F144D41C-F180-8E56-00F9-FF065DA3B154" name="출석부_수강내역_FK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>EEAB4D78-8860-8F27-13D0-8941F94E1605</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E8A2117-265D-66B9-AC54-210BB4A1D762"/>
+<colUsage columnID="9E1D58C7-7BC4-7F58-61A8-7A8ED49698FB"/>
+<colUsage columnID="D58A972A-8533-B6D9-F584-72D2FCC92461"/>
+<colUsage columnID="E7166C61-B815-8DC5-4085-48D54CD8E3D9"/>
+<colUsage columnID="6B5E435F-5236-A3AE-68F9-85550CFA3A14"/>
+<colUsage columnID="A4841B3C-7B13-59DC-EDC6-FAD8621183F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

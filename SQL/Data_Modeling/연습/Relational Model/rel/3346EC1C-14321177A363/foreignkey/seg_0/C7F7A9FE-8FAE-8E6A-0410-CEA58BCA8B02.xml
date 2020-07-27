@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C7F7A9FE-8FAE-8E6A-0410-CEA58BCA8B02" containerWithKeyObject="6A66BB58-14AE-F71D-94AE-745ADE45E39E" localFKIndex="A17FF03E-6A8C-20AB-2B46-8E38F84F7149" name="수강내역_프로그램_FK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>2B9A3EFB-0DFE-3B25-E7B7-65C811008E4C</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<referredTableLongName>프로그램</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>63E0B8D7-9656-163B-2CAC-7AA42966AE58</referredTableID>
+<keyObject>B3338DC5-61A0-8F0A-3667-83DF0FF5F829</keyObject>
+<referredKeyID>B3338DC5-61A0-8F0A-3667-83DF0FF5F829</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>프로그램ID,강의실_강의실ID,강의실_관리인_관리자ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

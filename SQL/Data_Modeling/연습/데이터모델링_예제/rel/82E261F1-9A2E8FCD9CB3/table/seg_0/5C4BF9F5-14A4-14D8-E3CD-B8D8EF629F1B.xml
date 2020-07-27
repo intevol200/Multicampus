@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C4BF9F5-14A4-14D8-E3CD-B8D8EF629F1B" name="강사">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:51:53 UTC</createdTime>
+<generatorID>153EA2A9-BA9B-6289-137E-C7C1D9740351</generatorID>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="강사ID" id="02960209-C7C5-37B7-8128-F84813DDD56C">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:51:53 UTC</createdTime>
+<generatorID>262896D6-A77A-AD6E-49E7-64DF017B1992</generatorID>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이름" id="35FA2D1F-0D56-3C33-FC79-EAB8CF58B200">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:51:53 UTC</createdTime>
+<generatorID>7F89EBF9-EF38-8BE8-A86F-901844234F45</generatorID>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="전화번호" id="9EE8DA5C-3FE9-5273-E89B-02FBB225AE3F">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:51:53 UTC</createdTime>
+<generatorID>A46F56D6-9DC2-761C-07CB-5B1B8228092E</generatorID>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD10AD5A-B275-047F-AFE2-554243BCA248" name="강사_PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:51:53 UTC</createdTime>
+<generatorID>B2E37E3B-17C4-0242-C71D-5ED2B909CCCA</generatorID>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02960209-C7C5-37B7-8128-F84813DDD56C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

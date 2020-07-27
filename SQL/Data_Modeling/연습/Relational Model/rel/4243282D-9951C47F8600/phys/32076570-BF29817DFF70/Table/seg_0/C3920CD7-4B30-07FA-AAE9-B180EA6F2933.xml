@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ORDER_ITEMS2" directorySegmentName="seg_0" id="C3920CD7-4B30-07FA-AAE9-B180EA6F2933">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>F2BC4D45-25F6-3CAF-1572-834A55A81375</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>56AAAF76-3C76-EB21-7F35-F7EF0A495B1B</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRODUCT_ID" id="588F8EC9-9940-6A68-50F2-1A77B87804AE">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UNIT_PRICE" id="755B629A-EB77-DEBB-9061-FDB60E504F7E">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_ID" id="76D8A131-27AC-3775-D433-7C7653B85760">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QUANTITY" id="FEDE972D-3735-BEF7-9D9E-F2FA99CE5B74">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ORDERITEM2_PK" id="71DC3CB0-9EE6-7959-8C05-24192DAADEC0">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>F2BC4D45-25F6-3CAF-1572-834A55A81375</schemaObject>
+<segment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ORDERITEM2_OFK" id="0DD7323A-515F-2DA9-371B-6AF0354D5B6D">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ORDERITEM2_PFK" id="CF808F01-FD49-974F-1F7C-9D08376470F0">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ORDERITEM2_PK" id="9F9B59A5-0BB6-17C0-3D62-9ADB15C3F4D3">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<segment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+<existingIndex>71DC3CB0-9EE6-7959-8C05-24192DAADEC0</existingIndex>
+<indexSegment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

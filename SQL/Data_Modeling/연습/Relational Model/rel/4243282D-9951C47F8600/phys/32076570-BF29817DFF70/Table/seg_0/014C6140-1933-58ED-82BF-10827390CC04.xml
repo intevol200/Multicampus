@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CUST3P" directorySegmentName="seg_0" id="014C6140-1933-58ED-82BF-10827390CC04">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>F2BC4D45-25F6-3CAF-1572-834A55A81375</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>56AAAF76-3C76-EB21-7F35-F7EF0A495B1B</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="JUMIN_NUM" id="162CCDE4-4B10-7242-37D9-BCBBABF504BD">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_ID" id="C08C33C8-2EB7-48C7-247E-9F8CC8067F9D">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUST3P_PK" id="B4F3CBE9-E4AE-E112-F863-2B36E70BDD18">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>F2BC4D45-25F6-3CAF-1572-834A55A81375</schemaObject>
+<segment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUST3P_PK" id="5C972ED1-064C-85D8-A28B-490318E21740">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<segment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</segment>
+<tableSpace>91F459FB-F519-C8DA-E0F5-EE8BDAE1143D</tableSpace>
+<existingIndex>B4F3CBE9-E4AE-E112-F863-2B36E70BDD18</existingIndex>
+<indexSegment>FF04F1EA-17CD-8DF7-728A-CAF5AEACD4B1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

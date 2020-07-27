@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="153EA2A9-BA9B-6289-137E-C7C1D9740351" name="강사">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:41:08 UTC</createdTime>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<engineerTo>
+<item key="82E261F1-6FFE-7184-08B7-9A2E8FCD9CB3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="강사ID" id="262896D6-A77A-AD6E-49E7-64DF017B1992">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:41:58 UTC</createdTime>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<engineerTo>
+<item key="82E261F1-6FFE-7184-08B7-9A2E8FCD9CB3" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="이름" id="7F89EBF9-EF38-8BE8-A86F-901844234F45">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:41:23 UTC</createdTime>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<engineerTo>
+<item key="82E261F1-6FFE-7184-08B7-9A2E8FCD9CB3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="전화번호" id="A46F56D6-9DC2-761C-07CB-5B1B8228092E">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:41:31 UTC</createdTime>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<engineerTo>
+<item key="82E261F1-6FFE-7184-08B7-9A2E8FCD9CB3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2E37E3B-17C4-0242-C71D-5ED2B909CCCA" name="강사 PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:42:05 UTC</createdTime>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<engineerTo>
+<item key="82E261F1-6FFE-7184-08B7-9A2E8FCD9CB3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>262896D6-A77A-AD6E-49E7-64DF017B1992</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
