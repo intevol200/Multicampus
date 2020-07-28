@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="데이터모델링_연습" id="C47DD619-ACF2-07B0-7247-6664F756C05D" version="3.5">
-<createdBy>student</createdBy>
-<createdTime>2020-07-27 08:29:13 UTC</createdTime>
-<ownerDesignName>데이터모델링_연습</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>C47DD619-ACF2-07B0-7247-6664F756C05D</designId>
-</OSDM_Design>
