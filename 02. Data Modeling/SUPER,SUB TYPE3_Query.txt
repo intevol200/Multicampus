@@ -1,0 +1,52 @@
+SELECT c.cust_id, c.cust_name, c.jumin_num, 
+       o.order_id, o.order_date, o.order_total
+FROM (SELECT a.cust_id, a.cust_name, b.jumin_num
+      FROM cust3  a
+          ,cust3p b
+      WHERE a.cust_id   = b.cust_id
+        AND a.cust_type = 2) c
+    ,orders3    o 
+WHERE c.cust_id   = o.cust_id ; 
+  
+SELECT c.cust_id, c.cust_name, c.tax_num, 
+       o.order_id, o.order_date, o.order_total
+FROM (SELECT a.cust_id, a.cust_name, b.tax_num
+      FROM cust3  a
+          ,cust3c b
+      WHERE a.cust_id   = b.cust_id
+        AND a.cust_type = 1) c
+    ,orders3   o 
+WHERE c.cust_id   = o.cust_id ;  
+
+SELECT c.cust_id, c.cust_type, c.cust_name, c.jumin_num, c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM (SELECT a.cust_id, a.cust_name, a.cust_type, b.jumin_num, b.tax_num
+      FROM cust3 a,
+           (SELECT cust_id, jumin_num, null as tax_num
+            FROM cust3p
+            UNION ALL
+            SELECT cust_id, null, tax_num 
+            FROM cust3c) b
+      WHERE a.cust_id = b.cust_id) c
+    ,orders3    o 
+WHERE c.cust_id   = o.cust_id 
+ORDER BY c.cust_id, o.order_date ;  
+  
+SELECT c.cust_id       AS cust_id, 
+       c.cust_type     AS cust_type,
+       c.cust_name    AS cust_name,
+       c.jumin_num, 
+       c.tax_num,
+       o.order_id, o.order_date, o.order_total
+FROM orders3 o,
+     (SELECT a.cust_id, a.cust_type, a.cust_name,  p.jumin_num, c.tax_num
+        FROM cust3  a 
+            ,cust3p p 
+            ,cust3c c 
+       WHERE DECODE(a.cust_type,1,a.cust_id) = c.cust_id (+)
+         AND DECODE(a.cust_type,2,a.cust_id) = p.cust_id (+)) c 
+WHERE o.cust_id = c.cust_id 
+ORDER BY c.cust_id, o.order_date ; 
+
+
+

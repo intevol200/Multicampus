@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B3AE48A3-B9CB-E4BD-0C87-AEC2B5915FE4" containerWithKeyObject="23C2B8BE-608E-CEE7-4D14-DFB3FA51D62E" localFKIndex="5BBBB48E-25C0-1419-18A0-A614DC6387E4" name="EMP_DEPTNO_FK">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>EMP_DEPTNO_FK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<referredTableLongName>TEST.DEPT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B1F62CE9-B7EE-A160-C37F-A397180DE36E</referredTableID>
+<keyObject>5941EC27-B2B3-58A8-D4C2-20A033C675A3</keyObject>
+<referredKeyID>5941EC27-B2B3-58A8-D4C2-20A033C675A3</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>DEPTNO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

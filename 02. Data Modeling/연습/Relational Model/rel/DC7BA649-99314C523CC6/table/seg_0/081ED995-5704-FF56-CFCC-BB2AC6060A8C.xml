@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="081ED995-5704-FF56-CFCC-BB2AC6060A8C" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="DORMANT_HIST">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DORMANT_HIST</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="610FE4D6-CA19-4AB5-A461-02DB40D0C648">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>DORMANT_HIST</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2137124E-0872-9CC3-6186-72CAE9129499" referredColumn="99A718C4-707D-F548-8F31-95EF7E8FB3C7"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="FC65F31F-62B6-8BF7-80E5-C78068D4C96B">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>DORMANT_HIST</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="03317188-0F12-DCC3-EE52-099F517C51C0">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>DORMANT_HIST</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D10DB394-27DF-445F-50AB-8F697F961D87" name="DMTHIST_PK">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DMTHIST_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="610FE4D6-CA19-4AB5-A461-02DB40D0C648"/>
+<colUsage columnID="FC65F31F-62B6-8BF7-80E5-C78068D4C96B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D598763-63C6-B02B-16C5-A6832F34346A" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="DMTHIST_IX01">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DMTHIST_IX01</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="610FE4D6-CA19-4AB5-A461-02DB40D0C648"/>
+<colUsage columnID="FC65F31F-62B6-8BF7-80E5-C78068D4C96B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9383BD53-3F9E-4A09-DA80-ACB4120DDED6" name="DMTHIST_FK_CUSTID">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="610FE4D6-CA19-4AB5-A461-02DB40D0C648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

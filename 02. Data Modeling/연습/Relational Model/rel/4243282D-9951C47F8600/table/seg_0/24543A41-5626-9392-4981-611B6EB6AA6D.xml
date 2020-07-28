@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24543A41-5626-9392-4981-611B6EB6AA6D" schemaObject="F2BC4D45-25F6-3CAF-1572-834A55A81375" name="CUSTOMERS">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>CUSTOMERS</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="28C9EBD7-BAF3-42D5-9E71-E673E976F248">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_TYPE" id="983E7832-C8F5-C88B-A275-9D746ABBF6D1">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>CUST_TYPE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_NAME" id="8C0070F1-2E4F-51E0-54D6-4C340AFAF168">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>CUST_NAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="A631AC26-02EA-8A29-8F7E-211B99AB6040">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_EMAIL" id="CF088A68-A500-80D7-3402-ABA01D0E1A43">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>CUST_EMAIL</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="80708C31-CFC7-7742-C155-31D9F298C262">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JUMIN_NUM" id="1CBE6443-CD92-1ED3-D2B4-D1A8BB65C8AE">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>JUMIN_NUM</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAX_NUM" id="98E246E7-F866-D734-660E-1AB786253796">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>TAX_NUM</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_NAME" id="FB0DF4F6-3268-A89A-09ED-BAE77C415261">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>MANAGER_NAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOIN_DATE" id="D8926F17-C8E6-FC40-A002-F9855AC9AC7D">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUSTOMERS</sourceObjSchema>
+<sourceObjName>JOIN_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="851C358F-D325-CFF6-C87A-86372C222F02" name="CUST_PK">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>CUST_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28C9EBD7-BAF3-42D5-9E71-E673E976F248"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A52EE06A-A8A3-0D54-6D95-28B7BF59CCEA" schemaObject="F2BC4D45-25F6-3CAF-1572-834A55A81375" name="CUST_PK">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>CUST_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28C9EBD7-BAF3-42D5-9E71-E673E976F248"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

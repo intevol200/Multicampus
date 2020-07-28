@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C36762D1-894C-AB05-D824-3D75BC51A9F6" name="매니저">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 01:54:13 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="사번" id="C7D36258-44E8-726A-8FC7-A9EBBD55A6E3">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:23:39 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="이름" id="E2902A47-84B9-A60B-D1F9-9B9591A1E3F4">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:20:00 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="성별" id="912479FA-10D0-4991-F1F5-B5321B63E525">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:20:03 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="나이" id="F5E94DBF-38E4-81EC-D25B-3FECECE8CC8B">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:20:08 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74898E8B-8D45-49DF-57DC-380C99AD3CE6" name="매니저 PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 06:17:02 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7D36258-44E8-726A-8FC7-A9EBBD55A6E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

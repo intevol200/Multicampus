@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_8" directorySegmentName="seg_0" id="1FFF9FB6-D305-E5AD-C492-01508D173B25">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 08:50:18 UTC</createdTime>
+<ownerDesignName>데이터모델링_연습</ownerDesignName>
+<engineerTo>
+<item key="82E261F1-6FFE-7184-08B7-9A2E8FCD9CB3" value="true"/>
+</engineerTo>
+<sourcePk>5B568795-92CE-840E-0AE9-05DD6F1696EC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7CC365AA-6868-114E-2453-BE79C13CF2CF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D1020F2C-8A9B-A60F-48E8-5CCB9FA3FD59</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

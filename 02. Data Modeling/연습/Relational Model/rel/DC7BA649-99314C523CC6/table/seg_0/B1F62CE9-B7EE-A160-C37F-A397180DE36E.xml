@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B1F62CE9-B7EE-A160-C37F-A397180DE36E" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="DEPT">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DEPT</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPTNO" id="3D3F57BF-E832-CE8F-2EBE-F8E0E3F956F3">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>DEPT</sourceObjSchema>
+<sourceObjName>DEPTNO</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DNAME" id="BA09C961-2F90-2EC0-451A-8522CA422517">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>DEPT</sourceObjSchema>
+<sourceObjName>DNAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOC" id="AF6DAA64-3AC5-891A-DFC2-B28E17F2D65F">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>DEPT</sourceObjSchema>
+<sourceObjName>LOC</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5941EC27-B2B3-58A8-D4C2-20A033C675A3" name="DEPT_PK">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DEPT_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D3F57BF-E832-CE8F-2EBE-F8E0E3F956F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F71052BD-0CF4-277F-0FC7-D10270E015C2" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="DEPT_DEPTNO_IX">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DEPT_DEPTNO_IX</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D3F57BF-E832-CE8F-2EBE-F8E0E3F956F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CB7B334-EC37-64B9-12EE-D85CA2BD8E06" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="DEPT_DNAME_IX">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DEPT_DNAME_IX</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA09C961-2F90-2EC0-451A-8522CA422517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A6F3F11-347C-EDA1-0879-72CE57BF2682" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="DEPT_LOC_IX">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>DEPT_LOC_IX</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF6DAA64-3AC5-891A-DFC2-B28E17F2D65F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

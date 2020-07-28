@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="46CF5FDB-FD83-627F-4036-2E72A370640A" name="비품">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 01:53:32 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="비품코드" id="6CAFD0D4-B513-2ECC-3FFA-8A9D191B35CF">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:19:29 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="비품명" id="7C43D7CC-AD57-8BB5-EC66-20896F7A487C">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:21:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="보유개수" id="08ED3FC7-4CA9-6388-5A10-E646D33682E6">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:21:50 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="업체ID" id="6AB929F9-9E07-08F9-1051-14E17FFDD6F8">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:16:04 UTC</createdTime>
+<generatorID>4EC3A04E-342C-82A6-D29C-E6D9B7E9D362</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<referedAttribute>F01DCCCF-BA40-BC2C-A788-FC4190FB1DAE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="관리자ID2" id="770471B4-B63D-0A9F-2856-1B3CBEB682AC">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:16:13 UTC</createdTime>
+<generatorID>1714A545-70D1-82F0-68CB-D5D97214B4EC</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<referedAttribute>9A6A010E-0440-6700-67D0-3C3DE714685E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="89D6EAB6-74EB-8121-4718-3069ABC3EE42" name="비품 PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 06:17:43 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6AB929F9-9E07-08F9-1051-14E17FFDD6F8</attributeRef>
+<attributeRef>6CAFD0D4-B513-2ECC-3FFA-8A9D191B35CF</attributeRef>
+<attributeRef>770471B4-B63D-0A9F-2856-1B3CBEB682AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

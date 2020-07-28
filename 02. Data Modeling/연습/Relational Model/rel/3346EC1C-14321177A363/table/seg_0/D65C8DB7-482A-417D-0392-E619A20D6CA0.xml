@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D65C8DB7-482A-417D-0392-E619A20D6CA0" name="강사">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>435355F7-38AB-F586-3432-DD211DE3D1E2</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="강사ID" id="40296207-B11C-A55A-CC77-8CBC864C298C">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>CF258D32-93A5-C2BB-FD29-F295EEB63D5D</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이름" id="DA76664C-38FC-4E4B-9AA3-ECEAF0033D6B">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>B491BC9D-6FBE-10C9-6184-E0A0D1EAFEC0</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성별" id="66352C27-F08B-536E-4FA2-FAE1C18DDC12">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>2EDF8898-EC4A-4F94-55A1-2EADD9884DFD</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="나이" id="32F268F5-3181-A0C1-8BEE-AAA2E9C3EC30">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>63769C6E-4236-3760-7D67-DE4985807299</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B212CA6-9F15-EF50-1BA4-49DE2E16F11A" name="강사_PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:44:55 UTC</createdTime>
+<generatorID>C9E9D6F8-C084-3110-D0A6-6A8ED815AC2A</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40296207-B11C-A55A-CC77-8CBC864C298C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3920CD7-4B30-07FA-AAE9-B180EA6F2933" schemaObject="F2BC4D45-25F6-3CAF-1572-834A55A81375" name="ORDER_ITEMS2">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>ORDER_ITEMS2</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORDER_ID" id="76D8A131-27AC-3775-D433-7C7653B85760">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>ORDER_ITEMS2</sourceObjSchema>
+<sourceObjName>ORDER_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,12,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20977C09-62FB-5948-A56E-9167FB4136F8" referredColumn="52147C12-BE47-8F00-C1CE-950ECD9E980D"/>
+</associations>
+</Column>
+<Column name="PRODUCT_ID" id="588F8EC9-9940-6A68-50F2-1A77B87804AE">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>ORDER_ITEMS2</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4256604-01D2-6C51-975C-D19AE39444E3" referredColumn="4EB70098-607F-6B6F-C1BE-6DDE080055DB"/>
+</associations>
+</Column>
+<Column name="UNIT_PRICE" id="755B629A-EB77-DEBB-9061-FDB60E504F7E">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>ORDER_ITEMS2</sourceObjSchema>
+<sourceObjName>UNIT_PRICE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="FEDE972D-3735-BEF7-9D9E-F2FA99CE5B74">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>ORDER_ITEMS2</sourceObjSchema>
+<sourceObjName>QUANTITY</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F9B59A5-0BB6-17C0-3D62-9ADB15C3F4D3" name="ORDERITEM2_PK">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>ORDERITEM2_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D8A131-27AC-3775-D433-7C7653B85760"/>
+<colUsage columnID="588F8EC9-9940-6A68-50F2-1A77B87804AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71DC3CB0-9EE6-7959-8C05-24192DAADEC0" schemaObject="F2BC4D45-25F6-3CAF-1572-834A55A81375" name="ORDERITEM2_PK">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>ORDERITEM2_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D8A131-27AC-3775-D433-7C7653B85760"/>
+<colUsage columnID="588F8EC9-9940-6A68-50F2-1A77B87804AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DD7323A-515F-2DA9-371B-6AF0354D5B6D" name="ORDERITEM2_OFK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D8A131-27AC-3775-D433-7C7653B85760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF808F01-FD49-974F-1F7C-9D08376470F0" name="ORDERITEM2_PFK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="588F8EC9-9940-6A68-50F2-1A77B87804AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

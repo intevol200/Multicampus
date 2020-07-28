@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMP_DATE" directorySegmentName="seg_0" id="D3E75970-D6B6-D9FF-008C-92555CE534F2">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<schemaObject>6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>90CF0A26-C398-6396-9856-CFF2E7B856EC</segment>
+<tableSpace>D284575C-CA61-E110-E7B0-FE20A20293E6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPTNO" id="168993F8-035C-C090-406A-8D1D790242E8">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIREDATE" id="4FAC223F-E907-4FA3-0BB9-1C06B5EEC6B9">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENAME" id="6F0AB73D-63B6-247C-2C6A-964DF1F1C7B6">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPNO" id="9B0D21CE-46A2-5BDF-4CB5-7E94906D5BA1">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAL" id="C68F885C-4603-697E-A6F4-EBD34B01F391">
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

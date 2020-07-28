@@ -1,0 +1,227 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C88DA91-31F8-CA52-08EE-FC96ABD122EA" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="RETIRED_EMP">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>RETIRED_EMP</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="10B02C59-AC70-B7D0-DF78-10404E062E1C">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="36B67AA9-2DC6-1F3E-6D13-26C01B6B2FAB">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="DB2962E9-7B75-1543-89B5-C14632C27EDC">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="1D4F0200-C5A1-A0C1-48AB-814BC3F12CA7">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="ED264B29-A95B-2ABD-DDD3-969B58C24CAD">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="3013B5E7-97E9-5BB8-4D9D-C5395188C023">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_ID" id="4AD1575C-2A25-7EFD-8320-190669F3B424">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARY" id="7A50BCF4-C7D9-CF23-C7AB-CE44AFFF4582">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="02874F22-FC5F-86BF-DAAF-913D8A48FD0F">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="5B944DAF-1ADC-4977-FCAF-46F45FFC63EB">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_ID" id="25CC54F4-7AA5-B489-B29B-400E238A59B1">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RETIRED_DATE" id="9B01C898-19D4-C1CD-4611-01017B1EF659">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>RETIRED_EMP</sourceObjSchema>
+<sourceObjName>RETIRED_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB44F66B-78B7-FB86-125D-E9B8EC2821B9" name="RETIRED__PK_EMPID">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>RETIRED__PK_EMPID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:20 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10B02C59-AC70-B7D0-DF78-10404E062E1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D401F0F2-D80F-952E-699D-7EABB8B1F645" schemaObject="6C7ADD6F-9AAC-B3F5-DDE3-FCDE89B7A78B" name="RETIRED_IX01">
+<sourceConnName>test</sourceConnName>
+<sourceObjSchema>TEST</sourceObjSchema>
+<sourceObjName>RETIRED_IX01</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-15 02:19:19 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10B02C59-AC70-B7D0-DF78-10404E062E1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

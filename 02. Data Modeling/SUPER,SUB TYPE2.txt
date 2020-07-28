@@ -1,0 +1,95 @@
+DROP TABLE prod2 CASCADE CONSTRAINT PURGE ; 
+CREATE TABLE prod2 (
+    product_id        NUMBER(6,0),
+    product_name      VARCHAR2(125 BYTE),
+    product_status    VARCHAR2(20 BYTE) ,
+    list_price        NUMBER(8,2)       ,
+    min_price         NUMBER(8,2)       ,
+	CONSTRAINT prod2_pk PRIMARY KEY(product_id)
+) ; 
+
+INSERT INTO prod2 SELECT product_id, product_name, product_status, list_price, min_price FROM products ; 
+COMMIT ;
+
+DROP TABLE cust2c CASCADE CONSTRAINT PURGE ; 
+CREATE TABLE cust2c (
+    cust_id          NUMBER(6,0),
+    cust_name        VARCHAR2(20 BYTE),
+	cust_type        NUMBER(1,0),
+    address          VARCHAR2(40 BYTE),
+    cust_email       VARCHAR2(30 BYTE),
+    phone_number     VARCHAR2(25 BYTE),
+	tax_num          VARCHAR2(10),
+	manager_name     VARCHAR2(20 BYTE),
+    join_date        DATE,
+	CONSTRAINT cust2c_pk PRIMARY KEY(cust_id) 
+); 
+
+INSERT INTO cust2c
+SELECT rownum, cust_name,1, address, cust_email, phone_number, tax_num,manager_name, join_date
+FROM customers
+WHERE cust_type = 1 ; 
+commit ; 
+
+DROP TABLE cust2p CASCADE CONSTRAINT PURGE ; 
+CREATE TABLE cust2p (
+    cust_id          NUMBER(6,0),
+    cust_name        VARCHAR2(20 BYTE),
+	cust_type        NUMBER(1,0),
+    address          VARCHAR2(40 BYTE),
+    cust_email       VARCHAR2(30 BYTE),
+    phone_number     VARCHAR2(25 BYTE),
+	jumin_num        VARCHAR2(13),
+    join_date        DATE,
+	CONSTRAINT cust2p_pk PRIMARY KEY(cust_id) 
+); 
+
+INSERT INTO cust2p
+SELECT rownum, cust_name, 2, address, cust_email, phone_number, jumin_num, join_date
+FROM customers
+WHERE cust_type = 2 ; 
+commit ; 
+
+DROP TABLE orders2 CASCADE CONSTRAINT PURGE ; 
+CREATE TABLE orders2 (
+    order_id       NUMBER(12,0),
+    order_date     DATE,
+    order_mode     VARCHAR2(8 BYTE),
+    cust_id        NUMBER(6,0),
+    cust_type      NUMBER(1,0),
+    order_status   NUMBER(2,0),
+    order_total    NUMBER(8,2),
+	CONSTRAINT order2_pk PRIMARY KEY(order_id)
+) ;
+
+insert into orders2 
+select b.order_id, b.order_date, b.order_mode, a.newid, 1, b.order_status, b.order_total  
+from (SELECT rownum as newid, cust_id, cust_name, address, cust_email, phone_number, jumin_num, join_date
+      FROM customers
+      WHERE cust_type = 1) a 
+    ,orders  b
+WHERE a.cust_id = b.cust_id ;     
+
+insert into orders2 
+select b.order_id, b.order_date, b.order_mode, a.newid, 2, b.order_status, b.order_total  
+from (SELECT rownum as newid, cust_id, cust_name, address, cust_email, phone_number, jumin_num, join_date
+      FROM customers
+      WHERE cust_type = 2) a 
+    ,orders  b
+WHERE a.cust_id = b.cust_id ;     
+commit; 
+
+DROP TABLE order_items2 CASCADE CONSTRAINT PURGE ; 
+CREATE TABLE order_items2 (
+    order_id     NUMBER(12,0),
+    product_id   NUMBER(6,0),
+    unit_price   NUMBER(8,2),
+    quantity     NUMBER(8,0),
+	CONSTRAINT orderitem2_pk PRIMARY KEY(order_id, product_id),
+	CONSTRAINT orderitem2_pfk FOREIGN KEY(product_id) REFERENCES prod2(product_id),
+	CONSTRAINT orderitem2_ofk FOREIGN KEY(order_id)   REFERENCES orders2(order_id) 
+     	
+);
+
+INSERT INTO order_items2 SELECT * FROM order_items ;
+COMMIT ;

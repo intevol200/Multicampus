@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2B0CF4F3-249B-E39B-1505-A29D3EE4BBB8" name="프로그램">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 01:52:29 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="프로그램ID" id="37B4CE76-4F60-FEDD-164A-826AB150F4BF">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:57:09 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로그램명" id="90E95210-B6B9-CEFB-7A31-1D2EA981F227">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:20:41 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="과정구분" id="C2F44672-B00F-9F7E-3D2E-A8CF286A2AA1">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 02:46:10 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="시작일" id="DA543545-0453-322D-F86F-1CF560757FFB">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 03:03:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="종료일" id="7F80F6DA-8C76-DB91-BF10-FBB2BBA31729">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 03:03:23 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="강의실ID" id="3D7F8833-2212-6B2E-3EBC-E9B05ADE27E5">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:16:25 UTC</createdTime>
+<generatorID>23561904-2133-7D90-F542-3BF2F497AE1A</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<referedAttribute>1A2E716F-8AE4-4902-B543-9C4B7512ADC9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="관리자ID" id="32C16A2E-A5B8-AD72-4D40-C053EC178478">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 07:16:25 UTC</createdTime>
+<generatorID>23561904-2133-7D90-F542-3BF2F497AE1A</generatorID>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<referedAttribute>384FC0FE-A943-7AFD-FF96-94E75418FBD1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0215B523-73B9-993E-16AA-D76B37BFEE53" name="프로그램 PK">
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 06:17:18 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<engineerTo>
+<item key="DC7BA649-E06A-D4DA-1A7D-99314C523CC6" value="true"/>
+<item key="4243282D-9BC5-1D21-EB35-9951C47F8600" value="true"/>
+<item key="3346EC1C-3BE3-E9BF-0A15-14321177A363" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>37B4CE76-4F60-FEDD-164A-826AB150F4BF</attributeRef>
+<attributeRef>3D7F8833-2212-6B2E-3EBC-E9B05ADE27E5</attributeRef>
+<attributeRef>32C16A2E-A5B8-AD72-4D40-C053EC178478</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

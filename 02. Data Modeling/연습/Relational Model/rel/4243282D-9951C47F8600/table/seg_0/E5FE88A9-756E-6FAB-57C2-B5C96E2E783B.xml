@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5FE88A9-756E-6FAB-57C2-B5C96E2E783B" schemaObject="F2BC4D45-25F6-3CAF-1572-834A55A81375" name="CUST2C">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>CUST2C</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="B6C2A40F-F364-144B-5124-D97C472C919D">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_NAME" id="2156ED43-6B1E-8E6C-67F9-64509D27BE39">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>CUST_NAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_TYPE" id="35B49C75-2775-A79F-A5B6-6217D42127B1">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>CUST_TYPE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="B363A9FB-31EA-E6E6-B10D-F3FC40618806">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_EMAIL" id="A59C4B14-A548-6B9E-1D6B-F4B1C6B0E535">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>CUST_EMAIL</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="D0836FB9-A889-B4D5-8DD9-3AE7EFF17483">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAX_NUM" id="8B12954F-56C7-39FB-F5E7-19226B406E75">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>TAX_NUM</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_NAME" id="223F7C6C-E11D-8C6C-BAEE-80420E2F2080">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>MANAGER_NAME</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOIN_DATE" id="63F380A4-6521-2618-2453-90F909A40F7D">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>CUST2C</sourceObjSchema>
+<sourceObjName>JOIN_DATE</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3D828C4-C001-5237-0E66-4913AA40EEA7" name="CUST2C_PK">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>CUST2C_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:46 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6C2A40F-F364-144B-5124-D97C472C919D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02ACC395-7F79-6FB1-E0C3-A34E1E247D96" schemaObject="F2BC4D45-25F6-3CAF-1572-834A55A81375" name="CUST2C_PK">
+<sourceConnName>aaa</sourceConnName>
+<sourceObjSchema>AAA</sourceObjSchema>
+<sourceObjName>CUST2C_PK</sourceObjName>
+<createdBy>student</createdBy>
+<createdTime>2020-07-27 05:02:45 UTC</createdTime>
+<ownerDesignName>Relational Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6C2A40F-F364-144B-5124-D97C472C919D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
