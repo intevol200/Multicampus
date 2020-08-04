@@ -8,6 +8,9 @@
 #
 _사용 소프트웨어_
 1. Oracle SQL Developer
+2. Hadoop
+3. MongoDB
+4. RStudio
 
 #
 [과정 소개 페이지](https://www.multicampus.com/system/attach/image/GgO6PMs32TPyiyhyM1dv/DbLE5bN1OFbxaM1vm9KLmUduZ)
