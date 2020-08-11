@@ -11,6 +11,7 @@ _사용 소프트웨어_
 2. Hadoop
 3. MongoDB
 4. RStudio
+5. Jupyter Notebook (Anaconda3)
 
 #
 [과정 소개 페이지](https://www.multicampus.com/system/attach/image/GgO6PMs32TPyiyhyM1dv/DbLE5bN1OFbxaM1vm9KLmUduZ)
